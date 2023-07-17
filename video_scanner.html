@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Scanner & File Downloader</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">Video Scanner & File Downloader</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html#">Video Scanner & File Downloader</a></li>
+					<li><a href="about.html#">About</a></li>
+					<li><a href="#">Temp</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h2>Scan YouTube Videos</h2>
+				<p>Enter a URL to scan and download videos or files from YouTube.</p>
+				<form>
+					<label for="url-input">Enter URL to scan:</label>
+					<div class="input-group">
+						<input type="text" id="url-input" name="url-input" placeholder="https://">
+						<button type="button" id="scan-button"><i class="fas fa-search"></i> Search </button>
+					</div>
+					<label for="file-input">Enter URL to download file:</label>
+					<div class="input-group">
+						<input type="text" id="file-input" name="file-input" placeholder="https://">
+						<button type="button" id="download-button"><i class="fas fa-download"></i> Download</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="videos">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="video youtube">
+							<div class="video-preview"></div>
+							<h3 class="video-title"></h3>
+							<div class="video-actions">
+								<a href="#" class="video-download"><i class="fas fa-download"></i> Download</a>
+								<span id="download-text-1"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Video Scanner. All rights reserved.</p>
+			<p>Designed and developed by Edward Lo.</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
